@@ -21,9 +21,20 @@
 
 	<?php get_template_part( 'header/preloader' ); ?>
 
+    <div class="widget-header">
+        <?php
+
+        if (!dynamic_sidebar ('header-page')) {
+            dynamic_sidebar ('header-page');
+        }
+
+        ?>
+    </div>
+
 	<!-- PAGE CONTENT
 	============================================= -->	
 	<div id="page" class="page">
 
 		<?php get_template_part( 'header/'.PergoHeader::get_navbar_style() ); ?>
 		<?php get_template_part( 'header/breadcrumbs' ); ?>
+

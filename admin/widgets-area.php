@@ -19,7 +19,16 @@ if ( !function_exists( 'pergo_sidebars' ) ) {
             'before_title' => '<h5 class="h5-sm widget-title">',
             'after_title' => '</h5>',
             'before_widget' => '<div id="%1$s" class="single-widget sidebar-div m-bottom-50 %2$s">',
-            'after_widget' => '</div>' 
+            'after_widget' => '</div>'
+        );
+        register_sidebar( $args );
+        $args = array(
+            'id' => 'header-page',
+            'name' => __( 'Header Widget Area', 'pergo' ),
+            'before_title' => '<h5 class="h5-sm widget-title">',
+            'after_title' => '</h5>',
+            'before_widget' => '<div id="%1$s" class="single-widget header-div m-bottom-50 %2$s">',
+            'after_widget' => '</div>'
         );
         register_sidebar( $args );
         $args = array(
