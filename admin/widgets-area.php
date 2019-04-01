@@ -27,7 +27,7 @@ if ( !function_exists( 'pergo_sidebars' ) ) {
             'name' => __( 'Header Widget Area', 'pergo' ),
             'before_title' => '<h5 class="h5-sm widget-title">',
             'after_title' => '</h5>',
-            'before_widget' => '<div id="%1$s" class="single-widget header-div m-bottom-50 %2$s">',
+            'before_widget' => '<div id="%1$s" class="single-widget header-div %2$s">',
             'after_widget' => '</div>'
         );
         register_sidebar( $args );

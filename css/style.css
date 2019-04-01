@@ -5913,10 +5913,15 @@ nav a#pull {
     display: none;  
 }  
 .widget-header{
-  position: relative;
+  position: fixed;
   z-index: 2000;
-  top: 0;
+  top: 15%;
   left: 0;
+  padding: 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 0 2px rgba(50, 50, 50, 0.4);
 }
 .widget-header .flat-language{
   list-style: none;
@@ -5924,5 +5929,17 @@ nav a#pull {
   margin: 0;
 }
 .widget-header .flat-language li{
-  display: inline-block;
+  display: block;
+  font-size: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.widget-header .flat-language li img{
+  width: 22px;
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .widget-header .flat-language li span{
+    display: none;
+  }
 }
