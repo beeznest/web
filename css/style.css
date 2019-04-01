@@ -5912,3 +5912,17 @@ span.support-number {
 nav a#pull {  
     display: none;  
 }  
+.widget-header{
+  position: relative;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+}
+.widget-header .flat-language{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.widget-header .flat-language li{
+  display: inline-block;
+}
