@@ -16,7 +16,7 @@
 <body <?php body_class(); ?>>
     
     <?php get_template_part( 'header/preloader' ); ?>
-    
+
     <div class="widget-header">
         <?php
 
